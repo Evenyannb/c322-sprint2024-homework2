@@ -1,11 +1,13 @@
 package edu.iu.yanlian.demo.repository;
 import edu.iu.yanlian.demo.model.Guitar;
+import org.springframework.stereotype.Repository;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Repository
 public class InventoryRepository {
 
     private List<Guitar> guitars;

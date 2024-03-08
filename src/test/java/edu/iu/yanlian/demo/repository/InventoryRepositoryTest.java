@@ -9,8 +9,8 @@ public class InventoryRepositoryTest {
     @Test
     public void Test1(){
         InventoryRepository intentory = new InventoryRepository();
-        intentory.addGuitar("ZABB13479", 1777, "Zager", "80 series", "travel", "Mahogany", "Mahogany");
-        intentory.addGuitar("ZABB13478", 2900, "Zager", "80 series", "stationary", "Mahogany", "Mahogany");
+        intentory.addGuitar("ZABB13479", 1777, "FENDER", "80 series", "travel", "Mahogany", "Mahogany");
+        intentory.addGuitar("ZABB13478", 2900, "MARTIN", "80 series", "stationary", "Mahogany", "Mahogany");
         intentory.addGuitar("ZABB13477", 1650, "Zager", "900 series", "travel", "Sitka", "Engelmann");
 
         System.out.println(intentory.getGuitar("ZABB13479").getPrice());
