@@ -1,7 +1,7 @@
 package edu.iu.yanlian.demo.security;
 
 import edu.iu.yanlian.demo.model.Customer;
-import edu.iu.yanlian.demo.repository.CustomerFileRepository;
+import edu.iu.yanlian.demo.repository.CustomerRepository;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -11,9 +11,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class UserDetailsSecurityService implements
         UserDetailsService {
-    CustomerFileRepository customerRepository;
+    CustomerRepository customerRepository;
 
-    public UserDetailsSecurityService(CustomerFileRepository
+    public UserDetailsSecurityService(CustomerRepository
                                               customerRepository) {
         this.customerRepository = customerRepository;
     }
