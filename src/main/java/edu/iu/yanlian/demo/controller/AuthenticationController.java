@@ -3,7 +3,7 @@ package edu.iu.yanlian.demo.controller;
 
 
 import edu.iu.yanlian.demo.model.Customer;
-import edu.iu.yanlian.demo.repository.CustomerRepository;
+import edu.iu.yanlian.demo.repository.CustomerFileRepository;
 import edu.iu.yanlian.demo.security.TokenService;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -16,11 +16,11 @@ import org.springframework.web.bind.annotation.*;
 public class AuthenticationController {
     private final AuthenticationManager authenticationManager;
     private final TokenService tokenService;
-    CustomerRepository customerRepository;
+    CustomerFileRepository customerRepository;
     public AuthenticationController(AuthenticationManager
                                             authenticationManager,
                                     TokenService tokenService,
-                                    CustomerRepository
+                                    CustomerFileRepository
                                             customerRepository) {
         this.authenticationManager = authenticationManager;
         this.tokenService = tokenService;
